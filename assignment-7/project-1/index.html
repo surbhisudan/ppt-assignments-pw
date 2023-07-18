@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- quiz app -->
+    <section class="main-box">
+        <div class="container">
+            <h3 class="question"></h3>
+            <ul class="options"></ul>
+        </div>
+        <div class="result">
+            <input type="text" id="result" value="result">
+            <div class="score"></div>
+        </div>
+        <!-- section buttons -->
+        <section class="btn-section">
+            <div class="btn submit">
+                <button>Submit</button>
+            </div>
+            <div class="btn next">
+                <button>Next</button>
+            </div>
+        </section>
+    </section>
+    <!-- model content goes here -->
+    <div class="modal">
+        <div class="modal-content">
+            <!-- Modal content goes here -->
+            <h2>Quiz Result</h2>
+            <p class="wrong"></p>
+            <p class="right"></p>
+            <p>Your score: <span id="score"></span></p>
+            <p class="pass-fail"></p>
+            <p class="fail-message"></p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

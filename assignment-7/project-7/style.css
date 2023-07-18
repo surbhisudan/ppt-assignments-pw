@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* work for main box */
+
+.main {
+    display: flex;
+    border: 1px solid black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #413838;
+}
+
+.main .input-box {
+    width: 30%;
+}
+
+
+.input-box {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.form .title {
+    font-size: 1.5em;
+}
+
+.form input {
+    font-size: 20px;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;
+}
+
+/* right side div */
+
+.content {
+    width: 65%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content .card .img-box {
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content .card .img-box img {
+    width: 100%;
+}
+
+.content .card .text {
+    width: 100%;
+    overflow: hidden;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.content .card .text p{
+    height: 150px;
+    overflow-y: auto;
+}
+
+.read-more-link {
+    width: 25%;
+    padding: 1vh 0;
+}
+
+.delete-card {
+    width: 25%;
+    padding: 1vh 0;
+}
+
+.category {
+    text-align: end;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .main .input-box {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content .card {
+        grid-template-columns: 1fr;
+    }
+
+    .content .card .img-box {
+        width: 100%;
+    }
+}
